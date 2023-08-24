@@ -2,7 +2,7 @@
 
 # analogusUMS_for_LPU
 
-Analogus UMS( University Management System ) is a analogus version of UMS of LPU( Lovely Professional University ), Where students can access their UMS information from university, like User Profile, Announcements, Messages, Grades, Marks, Classes, Datesheet anywhere in an very user furiendly and interactive way apart from traditional UMS.
+Analogus UMS( University Management System ) is a analogus version of UMS of LPU( Lovely Professional University ), Where students can access their UMS information from university, like User Profile, Announcements, Messages, Grades, Marks, Classes, Datesheet anywhere in an very user friendly and interactive way apart from traditional UMS.
 
 This modularized interface first require "Registration-id" and "Password" of UMS to login and to 
 access data using API's of LPU.
