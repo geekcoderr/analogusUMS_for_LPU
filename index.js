@@ -20,7 +20,7 @@ fetch('http://localhost:8000/apiums')
     })
     .catch(error => {
         noData();
-        document.getElementById('main-div').innerHTML = '<img src="../../gradients/No\ data-rafiki.png" alt="No-DATA" class="error">';
+        document.getElementById('main-div').innerHTML = '<img src="./Assets/No-data.png" alt="No-DATA" class="error">';
         console.error('Error fetching data:', error);
     }
     );

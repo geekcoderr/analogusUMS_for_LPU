@@ -8,7 +8,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
-    background-image: url('../../gradients/wallpaperflare.com_wallpaper.jpg');
+    background-image: url('./Assets/back.jpg');
     /* background-image: url('../../gradients'); */
     background-repeat: no-repeat;
     background-size: cover;
