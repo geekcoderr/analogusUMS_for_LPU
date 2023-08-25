@@ -11,11 +11,11 @@ access data using API's of LPU.
 
 
 
-@ Steps to access the Information:
+# Steps to access the Information:
 
-@ First you need to have python3 installed in your system, to run the "host-api.py" file.
-@ There Both credentials are required , then it will get fetch the data from PyPi and host an api on local server.
-@ Then you can Run 'index.html' file to access the webpage.
+1. First you need to have python3 installed in your system, to run the "host-api.py" file.
+2. There Both credentials are required , then it will get fetch the data from PyPi and host an api on local server.
+3. Then you can Run 'index.html' file to access the webpage.
 
 
 *(This is development phase, so we would be updating and adding functionalities constantly)*
