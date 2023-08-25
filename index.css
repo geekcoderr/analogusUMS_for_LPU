@@ -102,7 +102,7 @@ body {
      background-color: #04AA6D!important;   
 } */
 
-.course{
+.course {
     font-family: 'MuseoModerno', cursive;
     font-size: 18.5px;
     font-weight: 900;
@@ -150,7 +150,7 @@ body {
     width: 300px;
 }
 
-.error{
+.error {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,4 +162,16 @@ body {
     width: 350px;
     /* border: solid #861657 20px; */
     /* background-image: url('../../gradients/No\ data-rafiki.svg'); */
+}
+
+.a1 {
+    color: #04AA6D !important;
+}
+
+.a2 {
+    color: #520120 !important;
+}
+
+.a3 {
+    color: #16232E !important;
 }

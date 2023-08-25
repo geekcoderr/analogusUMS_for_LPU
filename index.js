@@ -9,9 +9,9 @@ fetch('http://localhost:8000/apiums')
         let output = '';
         data.forEach(item => {
             output += `<div class="content">
-                    <div class="course"><p class="p1">Course | ${item.course} |</p></div><br> 
-                    <div class="timing"><p class="p2">Timing | ${item.timing} |</p></div><br>
-                    <div class="platform"><p class="p3">Room-No | ${item.platform} |</p></div>
+                    <div class="course"><p class="p1">Course |&nbsp<short class="a1">${item.course}</short>&nbsp|</p></div><br> 
+                    <div class="timing"><p class="p2">Timing |&nbsp<short class="a2">${item.timing}</short>&nbsp|</p></div><br>
+                    <div class="platform"><p class="p3">Room-No |&nbsp<short class="a3">${item.platform}</short>&nbsp|</p></div>
                     </div>`;
         });
         // console.log(output);
