@@ -183,3 +183,70 @@ body {
 .a3 {
     color: #16232E !important;
 }
+
+
+/* Media Query for Android Phones */
+@media only screen and (max-width: 599px) {
+    body {
+        /* Adjustments for phone screens */
+        margin: 2vh;
+    }
+
+    .main-div {
+        /* Adjustments for phone screens */
+        max-width: 95%;
+        border-radius: 30px;
+    }
+
+    .content {
+        /* Adjustments for phone screens */
+        width: 130px;
+        padding: 8px;
+    }
+
+    /* Continue adjusting other elements as needed */
+}
+
+/* Media Query for Android Tablets */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    body {
+        /* Adjustments for tablet screens */
+        margin: 3vh;
+    }
+
+    .main-div {
+        /* Adjustments for tablet screens */
+        max-width: 800px;
+        border-radius: 50px;
+    }
+
+    .content {
+        /* Adjustments for tablet screens */
+        width: 180px;
+        padding: 15px;
+    }
+
+    /* Continue adjusting other elements as needed */
+}
+
+/* Media Query for Android TVs */
+@media only screen and (min-width: 1280px) and (max-width: 1920px) {
+    body {
+        /* Adjustments for TV screens */
+        margin: 10vh;
+    }
+
+    .main-div {
+        /* Adjustments for TV screens */
+        max-width: 1500px;
+        border-radius: 100px;
+    }
+
+    .content {
+        /* Adjustments for TV screens */
+        width: 300px;
+        padding: 20px;
+    }
+
+    /* Continue adjusting other elements as needed */
+}
