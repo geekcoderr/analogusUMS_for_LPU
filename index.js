@@ -3,7 +3,7 @@ function noData() {
     loader.style.display = 'none';
 }
 
-fetch('http://localhost:8000/apiums')
+fetch('https://hostumsapi.geekcoderr.repl.co/apiums')
     .then(response => response.json())
     .then(data => {
         if (data[0]['message'] == "No Classes today") {
