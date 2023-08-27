@@ -1,6 +1,6 @@
 # Developed and managed by Nishant Maheshwari from LPU
 
-# analogusUMS_for_LPU
+# analogusUMS_for_LPU Description,
 
 Analogus UMS( University Management System ) is a analogus version of UMS of LPU( Lovely Professional University ), Where students can access their UMS information from university, like User Profile, Announcements, Messages, Grades, Marks, Classes, Datesheet anywhere in an very user furiendly and interactive way apart from traditional UMS.
 
