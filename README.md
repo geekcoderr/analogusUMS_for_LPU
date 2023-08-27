@@ -13,9 +13,10 @@ access data using API's of LPU.
 
 # Steps to access the Information:
 
-1. First you need to have python3 installed in your system, to run the "host-api.py" file.
+1. First you need to have python3, flask, flask_cors installed in your system, to run the "host-api py" file.
 2. There Both credentials are required , then it will fetch data from PyPi API and host an API on local server that is "localhost:8000/apiums".
 3. Then you can Run 'index.html' file to access the webpage.
 
+# You can access your 'Time-Table' here for now,
 
 *(This is development phase, so we would be updating and adding functionalities constantly)*

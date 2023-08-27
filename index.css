@@ -110,13 +110,16 @@ body {
 
 
 .timing {
+    margin-top: 10px;
     background-color: #FF4858;
     font-size: 16px;
 }
 
 .platform {
+    margin-top: 10px;
     background-color: #FA7F08;
     font-size: 16px;
+    border-radius: 10px;
 }
 
 .p1,
