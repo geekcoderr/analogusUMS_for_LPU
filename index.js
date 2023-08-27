@@ -6,6 +6,11 @@ function noData() {
 fetch('http://localhost:8000/apiums')
     .then(response => response.json())
     .then(data => {
+        if (data[0]['message'] == "No Classes today") {
+            noData();
+            document.getElementById('main-div').innerHTML = '<img src="./Assets/No-data.png" alt="No-DATA" class="error">';
+        }
+        else{
         let output = '';
         data.forEach(item => {
             output += `<div class="content">
@@ -14,9 +19,10 @@ fetch('http://localhost:8000/apiums')
                     <div class="platform"><p class="p3">Room-No |&nbsp<short class="a3">${item.platform}</short>&nbsp|</p></div>
                     </div>`;
         });
-        // console.log(output);
+        // console.log(data);
         noData();
         document.getElementById('main-div').innerHTML = output;
+    }
     })
     .catch(error => {
         noData();
