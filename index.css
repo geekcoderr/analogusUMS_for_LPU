@@ -9,7 +9,7 @@ body {
     justify-content: space-around;
     background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
     background-image: url('./Assets/back.jpg');
-    /* background-image: url('../../gradients'); */
+
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -32,7 +32,6 @@ body {
     min-width: 300px;
     max-width: 900px;
     border-radius: 50px;
-    /* transform-origin: middle; */
     height: auto;
     min-height: 200px;
     /* Make sure the body takes up the full viewport height */
@@ -45,10 +44,7 @@ body {
     box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
@@ -69,12 +65,11 @@ body {
     border-radius: 20px;
     margin: 22px;
     color: whitesmoke;
-    /* max-height: 200px; */
-    /* max-width: fit-content; */
+
     width: 180px;
     overflow: hidden;
     border-top-left-radius: 45px;
-    /* border-bottom-right-radius: 30px; */
+
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
@@ -88,19 +83,13 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     transform-origin: middle;
-    /* background-color: #04AA6D!important; */
+
     width: 100%;
-    /* padding-left: 10%; */
-    /* padding-right: 10%; */
-    /* border-radius: 10px; */
+
     padding: 0%;
-    /* border-radius: 10px; */
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* .course{
-     background-color: #04AA6D!important;   
-} */
 
 .course {
     font-family: 'MuseoModerno', cursive;
@@ -151,6 +140,7 @@ body {
     border-radius: 50%;
     height: 300px;
     width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .error {
@@ -160,11 +150,26 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* border-radius: 50%; */
     height: 350px;
     width: 350px;
-    /* border: solid #861657 20px; */
-    /* background-image: url('../../gradients/No\ data-rafiki.svg'); */
+}
+
+.noclass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    border-bottom: #F28705 solid 15px;
+    padding-bottom: 2px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .a1 {

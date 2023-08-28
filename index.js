@@ -8,21 +8,22 @@ fetch('https://hostumsapi.geekcoderr.repl.co/apiums')
     .then(data => {
         if (data[0]['message'] == "No Classes today") {
             noData();
-            document.getElementById('main-div').innerHTML = '<img src="./Assets/No-data.png" alt="No-DATA" class="error">';
+            document.getElementById('main-div').innerHTML = '<img src="./Assets/noclass.gif" alt="No-class" class="noclass">';
+            console.log("here");
         }
-        else{
-        let output = '';
-        data.forEach(item => {
-            output += `<div class="content">
+        else {
+            let output = '';
+            data.forEach(item => {
+                output += `<div class="content">
                     <div class="course"><p class="p1">Course |&nbsp<short class="a1">${item.course}</short>&nbsp|</p></div> 
                     <div class="timing"><p class="p2">Timing |&nbsp<short class="a2">${item.timing}</short>&nbsp|</p></div>
                     <div class="platform"><p class="p3">Room-No |&nbsp<short class="a3">${item.platform}</short>&nbsp|</p></div>
                     </div>`;
-        });
-        // console.log(data);
-        noData();
-        document.getElementById('main-div').innerHTML = output;
-    }
+            });
+            // console.log(data);
+            noData();
+            document.getElementById('main-div').innerHTML = output;
+        }
     })
     .catch(error => {
         noData();
