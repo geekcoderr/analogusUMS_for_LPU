@@ -1,15 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script:wght@700&family=MuseoModerno:ital@1&family=Ubuntu:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script:wght@700&family=MuseoModerno:ital,wght@0,500;1,400&family=Ubuntu:wght@500&display=swap');
 
+/* Define the animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* Start with transparency */
+        transform: scale(0.8);
+        /* Start with a slightly smaller size */
+    }
+
+    to {
+        opacity: 1;
+        /* End with full opacity */
+        transform: scale(1);
+        /* End with original size */
+    }
+}
+
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply;
     background-image: url('./Assets/back.jpg');
-
+    /* background-image: url('../../Downloads/colorful-wallpaper-background-multicolored-generative-ai.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -17,11 +36,29 @@ body {
     margin: 5vh;
 }
 
+@keyframes slideIn {
+    0% {
+        transform: translateY(100px);
+        /* Start off the screen to the left */
+        opacity: 0;
+        /* Start with transparency */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* Slide in to original position */
+        opacity: 1;
+        /* End with full opacity */
+    }
+}
+
+
 .main-div {
+    animation: slideIn 1s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-around;
     background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
@@ -65,12 +102,12 @@ body {
     border-radius: 20px;
     margin: 22px;
     color: whitesmoke;
-
     width: 180px;
     overflow: hidden;
     border-top-left-radius: 45px;
-
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    animation: fadeIn 1.2s ease-in-out;
+
 }
 
 .course,
@@ -83,11 +120,10 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     transform-origin: middle;
-
     width: 100%;
-
     padding: 0%;
     font-family: 'Ubuntu', sans-serif;
+
 }
 
 
@@ -152,6 +188,7 @@ body {
     justify-content: space-around;
     height: 350px;
     width: 350px;
+    animation: fadeIn 1.2s ease-in-out;
 }
 
 .noclass {
@@ -170,6 +207,7 @@ body {
     border-bottom: #F28705 solid 15px;
     padding-bottom: 2px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: fadeIn 1.2s ease-in-out;
 }
 
 .a1 {
@@ -185,36 +223,69 @@ body {
 }
 
 
+
+
+@keyframes scaleAndStay {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1);
+        /* Scale up a bit more halfway through */
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.loader {
+    width: 300px;
+    height: 300px;
+    animation: scaleAndStay 1s ease-out;
+}
+
+
+
+
+
+
 /* Media Query for Android Phones */
 @media only screen and (max-width: 360px) and (max-height:700px) {
     body {
         /* Adjustments for phone screens */
-        /* padding: 40%;
-        padding-right: 40%; */ 
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         transform-origin: middle;
+        background-image: url('../../Downloads/4774128_2493617.jpg');
+        flex-direction: row;
+
     }
 
     .main-div {
         /* Adjustments for phone screens */
         max-width: 20%;
-        /* max-height: 50%; */
         border-radius: 50px;
         padding: 20px;
-        /* background-color: #16232E; */
+        flex-direction: row;
     }
 
-    .error{
-            max-width: 40vh;
-            max-height: 40vh;
+    .error {
+        max-width: 40vh;
+        max-height: 40vh;
     }
-    .noclass{
+
+    .noclass {
         max-width: 32vh;
-            max-height: 32vh;
-            margin: 10px;
+        max-height: 32vh;
+        margin: 10px;
     }
+
     .content {
         margin-top: 5%;
     }
@@ -251,7 +322,7 @@ body {
 
     .main-div {
         /* Adjustments for TV screens */
-        max-width: 1500px;
+        max-width: 10 00px;
         border-radius: 100px;
     }
 
