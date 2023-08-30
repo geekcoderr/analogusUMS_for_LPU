@@ -23,7 +23,7 @@ fetch('https://hostumsapi.geekcoderr.repl.co/apiums')
             // console.log(data);
             noData();
             document.getElementById('main-div').innerHTML = output;
-            document.body.style.backgroundImage="url('./Assets/background.jpg')";
+            // document.body.style.backgroundImage="url('./Assets/background.jpg')";
         }
     })
     .catch(error => {

@@ -262,17 +262,22 @@ body {
         background-size: cover;
         background-attachment: fixed;
         transform-origin: middle;
-        background-image: url('../../Downloads/4774128_2493617.jpg');
+        background-image: url('./Assets/android.jpg');
         flex-direction: row;
 
     }
 
     .main-div {
         /* Adjustments for phone screens */
-        max-width: 20%;
+        max-width: 10%;
         border-radius: 50px;
         padding: 20px;
         flex-direction: row;
+        box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-left: 1%;
+        padding-right: 1%;
     }
 
     .error {
@@ -284,6 +289,11 @@ body {
         max-width: 32vh;
         max-height: 32vh;
         margin: 10px;
+    }
+
+    .loader{
+        height: 250px;
+        width: 250px;
     }
 
     .content {
@@ -303,6 +313,7 @@ body {
         /* Adjustments for tablet screens */
         max-width: 800px;
         border-radius: 50px;
+        
     }
 
     .content {
