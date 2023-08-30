@@ -268,8 +268,6 @@ body {
         transform-origin: middle;
         background-image: url('./Assets/pix.jpg');
         flex-direction: row;
-        height: 100vh;
-        margin: 0;
 
     }
 
