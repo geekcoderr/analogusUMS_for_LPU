@@ -19,6 +19,8 @@
 }
 
 
+
+
 body {
     display: flex;
     justify-content: center;
@@ -27,13 +29,15 @@ body {
     justify-content: space-around;
     background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
     background-blend-mode: multiply;
-    background-image: url('./Assets/back.jpg');
+    background-image: url('./Assets/backasset1.jpg');
     /* background-image: url('../../Downloads/colorful-wallpaper-background-multicolored-generative-ai.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     transform-origin: middle;
-    margin: 5vh;
+    /* margin: 5vh; */
+    height: 60vh;
+    margin: 0;
 }
 
 @keyframes slideIn {
@@ -264,6 +268,8 @@ body {
         transform-origin: middle;
         background-image: url('./Assets/pix.jpg');
         flex-direction: row;
+        height: 100vh;
+        margin: 0;
 
     }
 
@@ -271,7 +277,11 @@ body {
         /* Adjustments for phone screens */
         max-width: 10%;
         border-radius: 50px;
+        border-top-left-radius: 110px;
+        border-bottom-right-radius: 110px;
         padding: 20px;
+        padding-top: 35px;
+        padding-bottom: 35px;
         flex-direction: row;
         box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
         margin-left: 10%;
@@ -291,7 +301,7 @@ body {
         margin: 10px;
     }
 
-    .loader{
+    .loader {
         height: 250px;
         width: 250px;
     }
@@ -313,7 +323,7 @@ body {
         /* Adjustments for tablet screens */
         max-width: 800px;
         border-radius: 50px;
-        
+
     }
 
     .content {

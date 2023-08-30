@@ -8,7 +8,7 @@ fetch('https://hostumsapi.geekcoderr.repl.co/apiums')
     .then(data => {
         if (data[0]['message'] == "No Classes today") {
             noData();
-            document.body.backgroundImage="url('./Assets/back.jpg')";
+            document.body.backgroundImage = "url('./Assets/back.jpg')";
             document.getElementById('main-div').innerHTML = '<img src="./Assets/noclass.gif" alt="No-class" class="noclass">';
         }
         else {
@@ -22,14 +22,17 @@ fetch('https://hostumsapi.geekcoderr.repl.co/apiums')
             });
             // console.log(data);
             noData();
+            document.body.style.height = "0%";
+            document.body.style.margin = "5vh";
             document.getElementById('main-div').innerHTML = output;
-            // document.body.style.backgroundImage="url('./Assets/background.jpg')";
+            // document.body.style.backgroundImage = "url('./Assets/backasset1.jpg')";
         }
     })
     .catch(error => {
         noData();
         document.getElementById('main-div').innerHTML = '<img src="./Assets/No-data.png" alt="No-DATA" class="error">';
-        document.body.backgroundImage="url('./Assets/back.jpg')";
+        document.body.backgroundImage = "url('./Assets/back.jpg')";
         console.error('Error fetching data:', error);
     }
     );
+
