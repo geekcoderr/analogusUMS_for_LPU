@@ -262,7 +262,7 @@ body {
         background-size: cover;
         background-attachment: fixed;
         transform-origin: middle;
-        background-image: url('./Assets/android.jpg');
+        background-image: url('./Assets/pix.jpg');
         flex-direction: row;
 
     }
