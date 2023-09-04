@@ -296,9 +296,38 @@ body {
     .noclass {
         max-width: 32vh;
         max-height: 32vh;
-        margin: 10px;
+        /* margin-top: 10%; */
+        animation: rotateAnimation 2s linear infinite;
+        transform-origin: center;
     }
 
+    @keyframes rotateAnimation {
+
+        0%,
+        100% {
+            transform: rotate(-25deg);
+            max-width: 25vh;
+            max-height: 25vh;
+        }
+
+        50% {
+            transform: rotate(25deg);
+            max-width: 29vh;
+            max-height: 29vh;
+        }
+    }
+
+    @keyframes rotateAnimationl {
+
+        0%,
+        100% {
+            transform: rotate(-2deg);
+        }
+
+        50% {
+            transform: rotate(2deg);
+        }
+    }
     .loader {
         height: 250px;
         width: 250px;
@@ -306,6 +335,8 @@ body {
 
     .content {
         margin-top: 5%;
+        animation: rotateAnimationl 1.5s linear infinite;
+        transform-origin: center;
     }
 
 }
