@@ -27,10 +27,9 @@ body {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
-    background-blend-mode: multiply;
+    background-blend-mode:darken;
+    background-color:#F28705;
     background-image: url('./Assets/backasset1.jpg');
-    /* background-image: url('../../Downloads/colorful-wallpaper-background-multicolored-generative-ai.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -87,6 +86,7 @@ body {
     -webkit-backdrop-filter: blur(5px);
 
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    
 }
 
 .content {
@@ -268,7 +268,7 @@ body {
         transform-origin: middle;
         background-image: url('./Assets/pix.jpg');
         flex-direction: row;
-
+        background-blend-mode:luminosity;
     }
 
     .main-div {
@@ -328,6 +328,7 @@ body {
             transform: rotate(2deg);
         }
     }
+
     .loader {
         height: 250px;
         width: 250px;
