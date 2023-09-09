@@ -266,9 +266,10 @@ body {
         background-size: cover;
         background-attachment: fixed;
         transform-origin: middle;
+        background-color:#FF4858;
         background-image: url('./Assets/pix.jpg');
         flex-direction: row;
-        background-blend-mode:luminosity;
+        background-blend-mode:multiply;
     }
 
     .main-div {
